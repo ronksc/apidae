@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+@include media-breakpoint-up(xs) {
+	body{
+		font-family: 'Raleway', sans-serif;
+	}
+	
+	a{
+		
+	}
+	
+	h2{
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight:700;
+		font-size:23px;
+	}
+	
+	h3{
+		
+	}
+	
+	p{
+		
+	}
+	
+	ul{
+		li{
+			
+		}
+	}
+	
+	.img-fluid{
+		width:100%;
+	}
+	
+	.row.no-gutters {
+	  margin-right: 0;
+	  margin-left: 0;
+	
+	  & > [class^="col-"],
+	  & > [class*=" col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	  }
+	}
+	
+	.main{
+		padding:0!important;
+	}
+	
+	.section-wrapper{
+		//padding-left:15px;
+		//padding-right:15px;
+		margin-bottom:35px;
+		font-size:10px;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+	.section-wrapper{
+		font-size:15px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	
+}
+
+@include media-breakpoint-up(xl) {
+
+}

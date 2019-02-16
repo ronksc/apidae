@@ -1,0 +1,64 @@
+@include media-breakpoint-up(xs) {
+	header{
+		a.brand{
+			display:block;
+			margin-bottom:10px;
+			img{
+				max-width:186px;
+			}
+			
+		}
+		
+		.header-container{
+			position:relative;
+			background:#fff;
+			padding-top:15px;
+		}
+		
+		.navbar-header{
+			display:inline-block;
+			float:right;
+			
+			.nav_toggle{
+				color:#000;
+				font-size:25px;
+				line-height:1;
+			}
+		}
+		
+		ul.main-menu{
+			font-size:12px;
+			font-weight:600;
+			margin-top:35px;
+			display:block;
+			
+			li{
+				display:inline-block;
+				margin-right:30px;
+				&:last-child{
+					margin-right:0;
+				}
+				a{
+					color:#231f20;
+					text-transform:uppercase;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+	
+}
+
+@include media-breakpoint-up(lg) {
+	
+}
+
+@include media-breakpoint-up(xl) {
+
+}
