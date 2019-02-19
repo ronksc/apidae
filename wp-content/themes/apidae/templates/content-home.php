@@ -82,16 +82,3 @@
 		</div>
 	</div>
 </div>
-<div class="section-wrapper module__shadow-top module__follow-us">
-	<div class="container">
-		<div class="col-12">
-			<div class="content-container">
-				<ul>
-					<li>FOLLOW US</li>
-					<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
