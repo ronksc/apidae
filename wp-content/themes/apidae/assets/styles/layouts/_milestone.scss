@@ -1,0 +1,229 @@
+@include media-breakpoint-up(xs) {
+	.page-template-template-milestone{
+		.section-wrapper{
+			font-size:13px;
+			
+			h3{
+				font-size:27px;
+				font-style:italic;
+			
+				strong{
+					font-size:23px;
+					font-style:normal;	
+					font-weight:700;
+				}
+			}
+			
+			.headline-text{
+				margin-top:5%;
+				margin-bottom:5%;
+			}
+		}
+	
+		.milestone-anchor{
+			//margin-bottom:0;
+			.anchor_wrapper{
+				ul{
+					display:block;
+					margin:0;
+					padding:0;
+					text-align:center;
+					
+					li{
+						list-style:none;
+						display:block;
+						font-size:12px;
+						font-weight:600;
+						margin-bottom:30px;						
+						
+						&:last-child{
+							margin-bottom:0;
+						}
+						
+						a{
+							color:#231f20;
+						}
+					}
+				}
+			}
+		}
+	
+		.feature-text{
+			color:#c1b49a;
+			text-align:center;
+			
+			h1{
+				font-size: 35px;
+				font-weight:700;
+				margin-bottom: 30px;
+			}
+			
+			p{
+				font-size:20px;
+				font-style: italic;
+			}
+		}
+		
+		.milestone-color-section{
+			padding:30px 0;
+			background:#f3f6f8;
+			
+			&.image-overlay{
+				background:transparent;
+				position:relative;
+				
+				&:after{
+					content:"";
+					position:absolute;
+					top:50%;
+					left:0;
+					transform:translateY(-50%);
+					z-index:10;
+					width:100%;
+					height:70%;
+					background:#f3f6f8;
+				}
+				
+				&>.container{
+					position:relative;
+					z-index:999;
+				}
+			}
+			
+			&.extra-padding-bottom{
+				padding-bottom:10%!important;
+			}
+			
+			
+		}
+		
+		.milestone-basic-text{
+			&.overlay-margin{
+				margin-top:-8%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+	
+}
+
+@include media-breakpoint-up(lg) {
+	.page-template-template-milestone{
+		.section-wrapper{			
+			.headline-text{
+				margin-top:10%;
+				margin-bottom:10%;
+			}
+		}
+		
+		.text-margin-vertical{
+			margin-top:auto;
+			margin-bottom:auto;
+		}
+	
+		.milestone-anchor{
+			.anchor_wrapper{
+				ul{
+					li{
+						display:inline-block;
+						margin-right:20px;
+						margin-bottom:0;
+						
+						&:last-child{
+							margin:0;
+						}
+					}
+				}
+			}
+		}
+		
+		.feature-text{
+			.content-container{
+				background:none;
+				padding-top:0;
+			}
+			
+			h1{
+				font-size: 45px;
+				font-weight:700;
+				margin-bottom: 30px;
+			}
+			
+			p{
+				font-size:25px;
+				font-style: italic;
+			}
+		}
+		
+		.milestone-section-1{
+			.image-1-margin{
+				margin:15% 0 0 30%;
+			}
+			
+			.text-margin-left{
+				margin:0 0 0 10%;
+			}
+			
+			.image-2-margin{
+				margin:50% 0 0 0;
+			}
+		}
+		
+		.milestone-section-2{
+			.text-margin-left{
+				margin:0 0 0 20%;
+			}
+			
+			.text-margin-top{
+				margin-top:auto;
+			}
+			
+			.text-margin-left-2{
+				margin-left:10%;
+			}
+		}
+		
+		.milestone-color-section{ 	
+			&.color-section-1{
+				.image-1-margin{
+					margin:auto 0;
+				}
+			}
+			
+			&.overlay-margin{
+				margin-top:-5%;
+				.image-margin-right{
+					margin:0 10% 0 0;
+				}
+			}
+		}
+		
+		.milestone-basic-text{
+			&.section-1{
+				.image-margin{
+					margin-right:10%;
+				}
+			}
+			
+			&.overlay-margin{
+				.image-margin{
+					margin-left:10%;
+				}
+				
+				.text-margin{
+					margin-top:auto;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+
+}

@@ -18,7 +18,7 @@
 <div class="section-wrapper module__two-column-text-with-img">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-1">
+			<div class="col-lg-10 offset-lg-1 padding-30">
 				<!--<div class="container">-->
 				<div class="row h-100">
 					<div class="col-12 col-lg-6 text-wrapper order-lg-last">
@@ -39,7 +39,7 @@
 <div class="section-wrapper module__two-column-text-with-img">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-1">
+			<div class="col-lg-10 offset-lg-1 padding-30">
 				<div class="row h-100">
 					<div class="col-12 col-lg-6 text-wrapper">
 						<div class="text-container">
@@ -62,17 +62,17 @@
 <div class="section-wrapper module__two-column-text-with-img with-margin">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-1">
+			<div class="col-lg-10 offset-lg-1 padding-30">
 				<div class="row h-100">
-					<div class="col-12 col-lg-9 img-container left padding-small">
-						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/our-story-3.png" class="img-fluid" />
-					</div>
-					<div class="col-12 col-lg-3 text-wrapper">
+					<div class="col-12 col-lg-3 text-wrapper order-lg-last">
 						<div class="text-container">
 							<p>So let us help to make those decisions easy – even wise proverbs teach us that it takes a village to raise a child – hence our name apidae – we are here to build a buzzing community that helps and shares. </p>
 							<p><strong>We are three dads who are happy to openly share our own parenting experiences to make the natural selection of those essential purchasing decisions as effortless as possible. </strong></p>
 							<p>How could three dads possibly impart such wisdom you may ask – We have been representing, creating and developing baby products for a decade and a half. Selling a huge range of quality baby products to other businesses in over 42 countries worldwide. Introducing products to other baby retailers has given us a wealth of experience in understanding all the practical facts and features. But there is just something about the process of becoming a parent – trying out products in real life with our own children has really opened our eyes to new and deep insights.</p>
 						</div>
+					</div>
+					<div class="col-12 col-lg-9 img-container left padding-small order-lg-first">
+						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/our-story-3.png" class="img-fluid" />
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 <div class="section-wrapper module__two-column-text-with-img">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-1">
+			<div class="col-lg-10 offset-lg-1 padding-30">
 				<div class="row h-100">
 					<div class="col-12 col-lg-6 text-wrapper">
 						<div class="text-container">

@@ -2,8 +2,15 @@
 	.page-template-template-our-story{
 		.section-wrapper{
 			margin:0;
+			
+			.padding-30{
+				padding-left:30px;
+				padding-right:30px;
+			}
 		}
 		.module__feature-banner{
+			margin-bottom:50px;
+			
 			.banner-container{
 				position:relative;
 					
@@ -40,11 +47,17 @@
 		}
 		
 		.module__two-column-text-with-img{
+			&.with-margin{
+				margin:30px 0;
+			}
+		
 			.img-container{
 				
 			}
 			
 			.text-wrapper{
+				margin:30px 0;
+			
 				.text-container{
 					.quote-text{
 						font-style: italic;
@@ -84,7 +97,7 @@
 	
 		.module__two-column-text-with-img{
 			&.with-margin{
-				margin:40px 0;
+				margin:60px 0;
 			}
 		
 			.img-container{				
