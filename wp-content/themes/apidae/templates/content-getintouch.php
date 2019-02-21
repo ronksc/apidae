@@ -13,10 +13,10 @@
 <div class="section-wrapper feature-image">
 	<div class="container">
 			<div class="row h-100">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6 mb-4 mb-lg-0">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/getintouch/getintouch-1.png" class="img-fluid" />
 				</div>
-				<div class="col-12 col-lg-6" style="margin:auto 0;">
+				<div class="col-12 col-lg-6 mb-4 mb-lg-0 my-lg-auto">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/getintouch/getintouch-2.png" class="img-fluid" />
 				</div>
 			</div>
@@ -40,25 +40,34 @@
 		<div class="row contact-form-container">
 			<div class="col-12">
 				<h3>GET IN TOUCH WITH US</h3>
-				<?php echo do_shortcode('[contact-form-7 id="33" title="Get in touch"]');?>
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<?php echo do_shortcode('[contact-form-7 id="33" title="Get in touch"]');?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="section-wrapper module__shadow-top testimonials">
+<div class="section-wrapper module__shadow-top testimonials mb-lg-5">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-4">
+		<div class="row content-container">
+			<div class="col-12">
+				<h2>TESTIMONIALS</h2>
+			</div>
+		</div>
+		<div class="row mb-lg-5">
+			<div class="col-12 col-md-4 testimonials-item">
 				<div class="testimonials-title">
 					<h4>TWO-IN-ONE CAR SEAT</h4>
 					<span>LUNA LEA</span>
 					<div class="rating">
 						<ul>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
 						</ul>
 					</div>
 				</div>
@@ -66,17 +75,17 @@
 					<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
 				</div>
 			</div>
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-4 testimonials-item">
 				<div class="testimonials-title">
 					<h4>TWO-IN-ONE CAR SEAT</h4>
 					<span>LUNA LEA</span>
 					<div class="rating">
 						<ul>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
 						</ul>
 					</div>
 				</div>
@@ -84,17 +93,73 @@
 					<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
 				</div>
 			</div>
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-4 testimonials-item">
 				<div class="testimonials-title">
 					<h4>TWO-IN-ONE CAR SEAT</h4>
 					<span>LUNA LEA</span>
 					<div class="rating">
 						<ul>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
-							<li>*</li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="testimonials-text">
+					<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-lg-5">
+			<div class="col-12 col-md-4 testimonials-item">
+				<div class="testimonials-title">
+					<h4>TWO-IN-ONE CAR SEAT</h4>
+					<span>LUNA LEA</span>
+					<div class="rating">
+						<ul>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="testimonials-text">
+					<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 testimonials-item">
+				<div class="testimonials-title">
+					<h4>TWO-IN-ONE CAR SEAT</h4>
+					<span>LUNA LEA</span>
+					<div class="rating">
+						<ul>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="testimonials-text">
+					<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 testimonials-item">
+				<div class="testimonials-title">
+					<h4>TWO-IN-ONE CAR SEAT</h4>
+					<span>LUNA LEA</span>
+					<div class="rating">
+						<ul>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
 						</ul>
 					</div>
 				</div>
