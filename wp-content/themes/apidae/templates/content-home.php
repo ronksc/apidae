@@ -1,11 +1,43 @@
 <div class="section-wrapper">
-	<div class="row no-gutters">
-		<div class="col-12 main-banner">
-			<div class="banner-item">
-				<!--image-->
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home_banner.png" class="img-fluid hidden-lg-up" />
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home_banner_desktop.png" class="img-fluid hidden-md-down" />
-				<!--text-->
+	<div class="row no-gutters main-banner-wrapper">
+			<div class="main-banner-control">
+				<a href="javascript:;" class="prev"></a>				
+				<a href="javascript:;" class="next"></a>
+			</div>
+			<div class="col-12 main-banner">
+				<div class="banner-item text-top">
+					<!--image-->
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-1.png" class="img-fluid hidden-lg-up" />
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-desktop-1.png" class="img-fluid hidden-md-down" />
+					<!--text-->
+					<div class="text-container">
+						<h2>FROM DAY ONE -</h2>
+						<p>We promise to be there for you, prodviding intimate, tailored advice on baby essentials for grwoing families.</p>
+						<a href="#">READ OUT STORY</a>
+					</div>
+				</div>
+				<div class="banner-item text-bottom">
+					<!--image-->
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-2.png" class="img-fluid hidden-lg-up" />
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-desktop-2.png" class="img-fluid hidden-md-down" />
+					<!--text-->
+					<div class="text-container">
+						<h2>AS YOUR CHILD GOREWS -</h2>
+						<p>Life will be full of surprises as a parent. We thought we'd prepare you for a few of them.</p>
+						<a href="#">LET US MEET YOUR EVOLVING NEEDS</a>
+					</div>
+				</div>
+				<div class="banner-item text-mid">
+					<!--image-->
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-3.png" class="img-fluid hidden-lg-up" />
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/home-banner-desktop-3.png" class="img-fluid hidden-md-down" />
+					<!--text-->
+					<div class="text-container">
+						<h2>LITTLE ONES.<br />BIG MOMENTS.</h2>
+						<p>Celebrate every instance of childhood and savor the whole journet.</p>
+						<a href="#">SEE OUR MILESTONES</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

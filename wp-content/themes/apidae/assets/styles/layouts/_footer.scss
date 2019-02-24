@@ -23,6 +23,21 @@
 				font-size:22px;
 				margin-bottom:10px;
 			}
+			
+			.email-input{
+				border-bottom:1px solid #231f20;
+				&:before{
+					content:"X";
+					display:inline-block;
+				}
+			
+				.footer-email{
+					background:transparent;
+					border:none;
+					margin-bottom:0;
+					outline:none;
+				}
+			}
 		}
 		
 		.module__footer-nav{

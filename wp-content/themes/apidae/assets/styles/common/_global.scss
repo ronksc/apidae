@@ -4,14 +4,21 @@
 @include media-breakpoint-up(xs) {
 	body{
 		font-family: 'Raleway', sans-serif;
+		.fixed{
+			position:fixed;
+		}
 	}
 	
 	a{
 		color:#c1b49a;
 	}
 	
+	h1{
+		font-family: 'Josefin Sans', sans-serif!important;
+	}
+	
 	h2{
-		font-family: 'Josefin Sans', sans-serif;
+		font-family: 'Josefin Sans', sans-serif!important;
 		font-weight:700;
 		font-size:23px;
 	}
@@ -47,6 +54,17 @@
 	
 	.main{
 		padding:0!important;
+		margin-top:90px;
+		position:relative;
+	}
+	
+	.btn_back-to-top{
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		background:url(../images/btn_back-to-top.png) no-repeat;
+		width:42px;
+		height:74px;
 	}
 	
 	.section-wrapper{
@@ -95,6 +113,10 @@
 }
 
 @include media-breakpoint-up(md) {
+	.main{
+		
+	}
+
 	.section-wrapper{
 		font-size:15px;
 		

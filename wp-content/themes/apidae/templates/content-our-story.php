@@ -2,8 +2,8 @@
 	<div class="container">
 			<div class="row h-100">
 				<div class="col-12 banner-container">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story-mobile.png" class="img-fluid hidden-md-up" />
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story.png" class="img-fluid hidden-lg-down" />
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story-mobile.png" class="img-fluid hidden-lg-up" />
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story.png" class="img-fluid hidden-md-down" />
 					<div class="text-wrapper">
 						<div class="text-container">
 							<h1>OUR STORY</h1>

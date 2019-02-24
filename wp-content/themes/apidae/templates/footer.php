@@ -1,3 +1,4 @@
+<a href="javascript:;" class="btn_back-to-top"></a>
 <div class="section-wrapper module__shadow-top module__follow-us">
 	<div class="container">
 		<div class="col-12">
@@ -27,12 +28,18 @@
 								<h2>STAY IN TOUCH</h2>
 								<p>Join our mailing list for news on our latest updates, designs & promotions. A bundle of joy in email form.</p>
 								<!--MAILCHIMP-->
+								<div class="email-input">
+									<input type="email" class="footer-email" />
+								</div>
 							</div>
 				
 							<div class="col-12 col-lg-6 footer__module">
 								<h2>SPREAD THE LOVE</h2>
 								<p>Share Apidae with a friend and we'll give you 10% off your next purchase when you both spend more than HK$1,000.</p>
 								<!--MAILCHIMP-->
+								<div class="email-input">
+									<input type="email" class="footer-email" />
+								</div>
 							</div>
 							
 							<div class="col-12 module__privacy footer__module no-padding hidden-md-down">

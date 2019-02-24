@@ -2,7 +2,7 @@
 	<div class="container">
 			<div class="row h-100 justify-content-center content-container">
 				<div class="col-10 col-lg-7">
-					<h1>GET IN TOUCH</h1>
+					<h2>GET IN TOUCH</h2>
 					<p>Apidae carefully curates products for expecting, new and growing families. We are happy to share our knowledge on a constantly expanding product range which is designed to meet every new need as families and their loved ones evolve through all the different stages of childhood.</p>
 					<p><a href="#">BOOK A CONSULATION</a></p>
 				</div>

@@ -19,6 +19,42 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+		
+		function initNavbarToggle(){
+			$('.nav_toggle').unbind('click');
+			$('.nav_toggle').click(function(){
+				var window_height = $(window).height();
+				var header_height = $('.navbar-header').height();
+				
+				//console.log('window_height: '+window_height);
+				//console.log('header_height: '+header_height);
+											   
+				if($(this).hasClass('collapsed')){
+					$(this).removeClass('collapsed');
+					//$('.menu_bg').fadeIn();
+					$('body').removeClass('fixed');
+					$('.main-menu-mobile').removeClass('show');
+					$('.mobile-menu-wrapper').css('height', 'auto');
+				}else{
+					$(this).addClass('collapsed');
+					//$('.menu_bg').fadeOut();
+					$('body').addClass('fixed');
+					$('.main-menu-mobile').addClass('show');
+					$('.mobile-menu-wrapper').css('height', window_height-header_height);
+				}
+			});
+		}
+		
+		$(document).ready(function(){
+			initNavbarToggle();
+		});
+		
+		$(window).resize(function(){
+			$('.nav_toggle').removeClass('collapsed');
+			$('body').removeClass('fixed');
+			$('.main-menu-mobile').removeClass('show');
+			$('.mobile-menu-wrapper').css('height', 'auto');
+		});
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -28,15 +64,45 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+		function initSlick(){
+			$('.main-banner').slick({
+				dots: false,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				prevArrow: $('.prev'),
+				nextArrow: $('.next'),
+				
+			});  
+		}
+			
+		// JavaScript to be fired on the home page
+		$(document).ready(function(){
+			initSlick();
+		});
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'page_template_template_milestone': {
       init: function() {
         // JavaScript to be fired on the about us page
+		
+		function initMilestoneAnchor(){
+			$('.nav_anchor').click(function(){
+				$anchor = $(this).attr("data-anchor");
+				$('html, body').animate({
+					scrollTop: $("#"+$anchor).offset().top-90
+				}, 500);
+			});
+		}
+		
+		$(document).ready(function(){
+			initMilestoneAnchor();						   
+		});
       }
     }
   };

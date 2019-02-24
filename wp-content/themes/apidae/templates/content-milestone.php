@@ -5,12 +5,12 @@
 					<div class="row no-gutters anchor_wrapper justify-content-md-center content-container">
 						<div class="col-12">
 							<ul>
-								<li><a href="#">NEWBORN</a></li>
-								<li><a href="#">1-3 MONTHS</a></li>
-								<li><a href="#">4-6 MONTHS</a></li>
-								<li><a href="#">6-12 MONTHS</a></li>
-								<li><a href="#">1-2 YEARS</a></li>
-								<li><a href="#">2+ YEARS</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="newborn">NEWBORN</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="1_3_months">1-3 MONTHS</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="4_6_months">4-6 MONTHS</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="4_8_months">4-8 MONTHS</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="1_2_years">1-2 YEARS</a></li>
+								<li><a class="nav_anchor" href="javascript:;" data-anchor="2_years">2+ YEARS</a></li>
 							</ul>
 						</div>
 					</div>
@@ -30,10 +30,11 @@
 		</div>
 	</div>
 </div>
-<div class="section-wrapper feature-image">
+<div class="section-wrapper feature-image" id="newborn">
 	<div class="container">
-			<div class="row h-100">
-				<div class="col-12">
+			<div class="row h-100 position-relative">
+				<div class="anchor">NEWBORN</div>
+				<div class="col-12 px-5 px-md-3">
 					<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-1.png" class="img-fluid" />
 				</div>
 			</div>
@@ -41,7 +42,7 @@
 	</div>
 </div>
 <div class="section-wrapper milestone-section-1">
-	<div class="container">
+	<div class="container px-5 px-md-3">
 		<div class="row">
 			<div class="col-lg-7">
 				<p>From the very moment you leave the hospital carrying your precious little newborn, you may have the feeling that you can’t really believe that the baby is actually here! This very tiny, really fragile baby is going to sit behind you in the car and they’re coming home with you. </p>
@@ -82,7 +83,7 @@
 	</div>
 </div>
 <div class="section-wrapper milestone-color-section color-section-1">
-	<div class="container">
+	<div class="container px-5 px-md-3">
 		<div class="row">
 <!--			<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
@@ -103,9 +104,10 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-section-2">
-	<div class="container">
-		<div class="row">
+<div class="section-wrapper milestone-section-2" id="1_3_months">
+	<div class="container px-5 px-md-3">
+		<div class="row position-relative">
+			<div class="anchor">1-3 MONTHS</div>
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
 					<div class="col-lg-7 order-last order-lg-first">
@@ -143,9 +145,10 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-color-section overlay-margin">
-	<div class="container">
-		<div class="row">
+<div class="section-wrapper milestone-color-section overlay-margin" id="4_6_months">
+	<div class="container px-5 px-md-3">
+		<div class="row position-relative">
+			<div class="anchor">4-6 MONTHS</div>
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
 					<div class="col-lg-6">
@@ -166,7 +169,7 @@
 </div>
 
 <div class="section-wrapper milestone-basic-text section-1">
-	<div class="container">
+	<div class="container px-5 px-md-3">
 		<div class="row">
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
@@ -187,9 +190,10 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-color-section image-overlay">
-	<div class="container">
-		<div class="row">
+<div class="section-wrapper milestone-color-section image-overlay" id="4_8_months">
+	<div class="container px-5 px-md-3">
+		<div class="row position-relative">
+			<div class="anchor">4-8 MONTHS</div>
 			<div class="col-lg-6">
 				<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-9.png" class="img-fluid" />
 			</div>
@@ -204,9 +208,10 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-basic-text section-2">
-	<div class="container">
-		<div class="row">
+<div class="section-wrapper milestone-basic-text section-2" id="1_2_years">
+	<div class="container px-5 px-md-3">
+		<div class="row position-relative">
+			<div class="anchor">1-2 YEARS</div>
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
 					<div class="col-lg-5 order-first order-lg-last">
@@ -229,7 +234,7 @@
 
 
 <div class="section-wrapper milestone-basic-text">
-	<div class="container">
+	<div class="container px-5 px-md-3">
 		<div class="row">
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
@@ -249,9 +254,10 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-color-section extra-padding-bottom">
-	<div class="container">
-		<div class="row">
+<div class="section-wrapper milestone-color-section extra-padding-bottom" id="2_years">
+	<div class="container px-5 px-md-3">
+		<div class="row position-relative">
+			<div class="anchor">2+ YEARS</div>
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
 					<div class="col-lg-6 order-first order-lg-last">
@@ -270,7 +276,7 @@
 </div>
 
 <div class="section-wrapper milestone-basic-text overlay-margin">
-	<div class="container">
+	<div class="container px-5 px-md-3">
 		<div class="row">
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
@@ -279,7 +285,7 @@
 							<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-13.png" class="img-fluid" />
 						</div>
 					</div>		
-					<div class="col-lg-6">
+					<div class="col-lg-6 text-margin-top">
 						<div class="headline-text">
 							<h3><strong>2+ YEARS</strong><br />“I Love You”</h3>
 							<p>Your heart will melt when your child says “mama” or “dada” for the first time. It feels so good that you can’t imagine how you will feel when your toddler actually says “I love you” or "wuv ooh", and then one day they just casually say it out of nowhere. Then later that day, they say it again. You just want to shout off the top of every rooftop, she loves us! She loves us! There’s no other feeling like it in the world. That’s your redemption for all the heartache, all the missed sleep, all the couple squabbles because of baby duty, all the times you sacrificed your personal time to do something sweet for your little one  - wrapped neatly into three little but unmistakeable words. As their vocabulary expands even further, they will no doubt, amaze you at every turn.</p>

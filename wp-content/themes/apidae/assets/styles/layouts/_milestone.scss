@@ -1,5 +1,14 @@
 @include media-breakpoint-up(xs) {
 	.page-template-template-milestone{
+		.anchor{
+			position: absolute;
+			left: -10px;
+			top: 0;
+			transform-origin: 0;
+			font-weight: bold;
+			transform: rotate(-90deg) translateX(-100%);
+		}
+	
 		.section-wrapper{
 			font-size:13px;
 			
@@ -56,6 +65,7 @@
 				font-size: 35px;
 				font-weight:700;
 				margin-bottom: 30px;
+				font-family: "Josefin Sans", sans-serif;
 			}
 			
 			p{
@@ -88,6 +98,10 @@
 					position:relative;
 					z-index:999;
 				}
+				
+				.anchor{
+					top:80px;
+				}
 			}
 			
 			&.extra-padding-bottom{
@@ -115,6 +129,10 @@
 
 @include media-breakpoint-up(lg) {
 	.page-template-template-milestone{
+		.anchor{
+			left:-20px;
+		}
+		
 		.section-wrapper{			
 			.headline-text{
 				margin-top:10%;
@@ -125,6 +143,10 @@
 		.text-margin-vertical{
 			margin-top:auto;
 			margin-bottom:auto;
+		}
+		
+		.text-margin-top{
+			margin-top:auto;
 		}
 	
 		.milestone-anchor{
@@ -180,9 +202,7 @@
 				margin:0 0 0 20%;
 			}
 			
-			.text-margin-top{
-				margin-top:auto;
-			}
+			
 			
 			.text-margin-left-2{
 				margin-left:10%;
@@ -202,12 +222,24 @@
 					margin:0 10% 0 0;
 				}
 			}
+			
+			&.image-overlay{
+				.anchor{
+					//top:80px;
+				}
+			}
 		}
 		
 		.milestone-basic-text{
 			&.section-1{
 				.image-margin{
 					margin-right:10%;
+				}
+			}
+			
+			&.section-2{
+				.anchor{
+					top:50px;
 				}
 			}
 			

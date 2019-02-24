@@ -1,5 +1,7 @@
 @include media-breakpoint-up(xs) {
 	header{
+		background:#ffffff;
+	
 		a.brand{
 			display:block;
 			margin-bottom:10px;
@@ -23,6 +25,64 @@
 				color:#000;
 				font-size:25px;
 				line-height:1;
+				text-decoration:none;
+				
+				a{
+					&:hover{
+						text-decoration:none;
+					}
+				}
+				
+				i{
+					font-size: 30px;
+				    margin-top: 15px;
+				}
+				
+				.fa-times{
+					display:none;
+				}
+				
+				&.collapsed{
+					.fa-bars{
+						display:none;
+					}
+					
+					.fa-times{
+						display:block!important;
+					}
+				}
+			}
+		}
+		
+		.nav-container{
+			background:#E9E8E6;
+			ul.mobile-menu{
+				padding:60px 0;
+				margin:0;
+			
+				li{
+					display:block;
+					margin-bottom:60px;
+					text-align:center;
+					
+					a{
+						color:#231f20;
+						text-transform:uppercase;
+					}
+					
+					&:last-child{
+						margin-bottom:0;
+					}
+					
+					&.current-menu-item{
+						a{
+							//text-decoration:underline dotted;
+							display:inline-block;
+							border-bottom:1px dashed #231f20;
+							padding-bottom:1px;
+						}
+					}
+				}
 			}
 		}
 		
@@ -41,6 +101,7 @@
 				a{
 					color:#231f20;
 					text-transform:uppercase;
+					font-family: "Josefin Sans", sans-serif;
 				}
 			}
 		}
