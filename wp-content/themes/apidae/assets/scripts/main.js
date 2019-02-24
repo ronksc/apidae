@@ -47,6 +47,28 @@
 		
 		$(document).ready(function(){
 			initNavbarToggle();
+			
+			// hide #back-top first
+			$(".btn_back-to-top").hide();
+			
+			// fade in .btn_back-to-top
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.btn_back-to-top').fadeIn();
+					} else {
+						$('.btn_back-to-top').fadeOut();
+					}
+				});
+		
+				// scroll body to 0px on click
+				$('.btn_back-to-top').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
 		});
 		
 		$(window).resize(function(){

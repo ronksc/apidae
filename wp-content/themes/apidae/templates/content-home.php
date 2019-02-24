@@ -58,7 +58,7 @@
 					<p>Even though parenting is a whole life job childhood is fast and fleeting. As parents we cannot hold onto things forever but we can help in the creation of unforgettable memories that stay forever ripe in your child's mind. After all, those little memories will follow them and guide them through each stage of life.</p>
 					<p>Nobody ever said parenting is easy. it can be a tough gig at times - a learning curve of ever-chargin schedules, wounder weeks and new milestones. And as a new parent you have so many decisiions ahead of your, just navigating through all those essential baby products already feels overwhelming. At each stage of your baby 's growth - they will have different needs. How will you choose?</p>
 					<p><a href="#">DISCOVER MORE ABOUT US</a></p>
-					<p><img src="<?=get_stylesheet_directory_uri()?>/assets/images/dummy.png" class="img-fluid" /></p>
+					<p><img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story-1.png" class="img-fluid" /></p>
 				</div>
 			</div>
 		</div>
