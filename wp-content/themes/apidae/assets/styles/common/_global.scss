@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700');
 
 @include media-breakpoint-up(xs) {
 	body{
@@ -56,6 +56,10 @@
 		padding:0!important;
 		margin-top:90px;
 		position:relative;
+		
+		a{
+			text-decoration:underline;
+		}
 	}
 	
 	.btn_back-to-top{
@@ -71,7 +75,7 @@
 		//padding-left:15px;
 		//padding-right:15px;
 		margin-bottom:35px;
-		font-size:10px;
+		font-size:15px;
 		
 		&.module__shadow-top{
 			.content-container{

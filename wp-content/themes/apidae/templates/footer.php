@@ -1,13 +1,19 @@
 <a href="javascript:;" class="btn_back-to-top"></a>
 <div class="section-wrapper module__shadow-top module__follow-us">
-	<div class="container">
-		<div class="col-12">
-			<div class="content-container">
-				<ul>
-					<li>FOLLOW US</li>
-					<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				</ul>
+	<div class="container-fluid">
+		<div class="row justify-content-center h-100">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="content-container pb-5">
+							<ul>
+								<li>FOLLOW US</li>
+								<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -51,8 +57,7 @@
 		
 					<div class="col-12 col-lg-3 footer__module">
 						<h2>CONTACT</h2>
-						<p>Tel: +852 2888 2888<br />
-						Email: info@apidae.com</p>
+						<p>Tel: +852 3996 9956<br />Email: <a href="mailto:info@apidae.hk">info@apidae.hk</a></p>
 						
 						<p><strong>BY APPOINTMENT ONLY</strong><br />
 						Room 826-828, One Island South<br />

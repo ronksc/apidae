@@ -116,7 +116,7 @@
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-6.png" class="img-fluid hidden-lg-up" />
 						
 						<div class="text-margin-left">
-							<div class="headline-text">
+							<div class="headline-text mt-lg-3 mb-lg-5 pt-lg-3 pb-lg-5">
 								<h3><strong>3 MONTHS</strong><br />First Holiday</h3>
 								<p>Igniting the love of travel is one of the best gifts you can give your children. That innate wanderlust will one day develop into countless beautiful memories.</p>
 								<p>Start a totally new tradition this year – something that the three (or more) of you will do this holiday and then make it a lifelong family ritual. </p>
@@ -145,18 +145,18 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-color-section overlay-margin" id="4_6_months">
+<div class="section-wrapper milestone-color-section overlay-margin bg_grey_texture" id="4_6_months">
 	<div class="container px-5 px-md-3">
 		<div class="row position-relative">
 			<div class="anchor">4-6 MONTHS</div>
 			<!--<div class="col-lg-10 offset-lg-1">
 				<div class="row">-->
 					<div class="col-lg-6">
-						<div class="image-margin-right">
+						<div class="mr-lg-5">
 							<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-7.png" class="img-fluid" />
 						</div>
 					</div>
-					<div class="col-lg-6 text-margin-vertical">
+					<div class="col-lg-6 my-lg-auto">
 						<div class="headline-text">
 							<h3><strong>4-6 MONTHS</strong><br />That Thrilling First Tooth</h3>
 							<p>The moment is unforgettable. You see a tiny white bud peeking out from those perfect gums. Oh how you will miss your baby's gummy grin. But wait those cute little chompers are just so adorable. It is definitely an exciting time – but sometimes teething can cause distress and pain. It is now the time to collect tips on teething and begin thinking about your child’s dental care.</p>
@@ -178,7 +178,7 @@
 							<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-8.png" class="img-fluid" />
 						</div>
 					</div>
-					<div class="col-lg-5 order-last order-lg-first text-margin-vertical">
+					<div class="col-lg-5 order-last order-lg-first my-lg-auto">
 						<div class="headline-text">
 							<h3><strong>4-6 MONTHS</strong><br />First Solids</h3>
 							<p>Once you get your pediatrician's green light to start solids, those first bites are exciting. Don’t forget to capture your child’s unforgettable expressions to all the new textures, tastes and sensations. Start slow, you actually do not need a ton of new equipment, just a few basics to help your child transition to solid foods. Every child is different, so be sure to respond appropriately to your baby’s cue. Happy feeding!</p>
@@ -197,8 +197,8 @@
 			<div class="col-lg-6">
 				<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-9.png" class="img-fluid" />
 			</div>
-			<div class="col-lg-6 text-margin-vertical">
-				<div class="headline-text">
+			<div class="col-lg-6 my-lg-auto">
+				<div class="headline-text ml-md-5">
 					<h3><strong>4-8 MONTHS</strong><br />Sitting Up Independently</h3>
 					<p>And all of a sudden, your baby has a new perspective on the world – with that also comes a little bit more independence. Tummy time will have strengthened his neck, back and stomach, allowing him to make this remarkable achievement. </p>
 					<p>Now that he can sit independently, leaving his hands free to explore, what will be the first thing he reaches for? After your baby accomplishes this milestone, crawling is right around the corner! Exciting times are ahead.</p>
@@ -217,9 +217,9 @@
 					<div class="col-lg-5 order-first order-lg-last">
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-10.png" class="img-fluid" />
 					</div>
-					<div class="col-lg-6 offset-lg-1 order-last order-lg-first">
+					<div class="col-lg-7 order-last order-lg-first">
 						<div class="d-flex h-100">
-							<div class="headline-text text-margin-vertical">
+							<div class="headline-text my-lg-auto mx-lg-5">
 								<h3><strong>1 YEAR</strong><br />First Steps</h3>
 								<p>They go from rolling over and sitting up, to crawling and standing all by themselves, and before you know it they’re actually taking their very first steps. You can’t believe your eyes. They’re really doing it! To see them actually take those first steps and then to gaze at their little face filled with awe and delight – what an experience!</p>
 								<p>This marks the beginning of a new and exciting stage – baby’s new self-sufficiency and mobility will lead her to explore endlessly with constant movement and falling – so much falling. This is a good time to introduce the concept of limits. Teach your baby that freedom comes with boundaries. It will help protect them from dangerous objects and situations – ready or not, here they come!</p>
@@ -241,8 +241,8 @@
 					<div class="col-lg-6">
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-11.png" class="img-fluid" />
 					</div>		
-					<div class="col-lg-6 text-margin-vertical">
-						<div class="headline-text">
+					<div class="col-lg-6 my-lg-auto">
+						<div class="headline-text ml-lg-5">
 							<h3><strong>1.5 - 2+ YEARS</strong><br />Big Kid’s Bed</h3>
 							<p>This is one giant leap for your little one. A new bed means more freedom for you and your toddler – and also new rules, new setup and new routines. New big boy or big girl bed – check! Bed rail so little one doesn’t fall off the bed – check! New favorite sheets – check! Nightlight, bedtime books, pillows and stuffed animals – check, check, check, check! All of these items will help make the transition smooth. </p>
 							<p>And also once the bars of the crib are gone, you will need to ensure the entire space is safe, so be aware of what needs to be childproofed, perhaps some furniture or items should be secured or removed from the room entirely.</p>
@@ -254,7 +254,7 @@
 	</div>
 </div>
 
-<div class="section-wrapper milestone-color-section extra-padding-bottom" id="2_years">
+<div class="section-wrapper milestone-color-section extra-padding-bottom bg_grey_texture" id="2_years">
 	<div class="container px-5 px-md-3">
 		<div class="row position-relative">
 			<div class="anchor">2+ YEARS</div>
@@ -263,8 +263,8 @@
 					<div class="col-lg-6 order-first order-lg-last">
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/milestones/milestones-12.png" class="img-fluid" />
 					</div>
-					<div class="col-lg-6 order-last order-lg-first text-margin-vertical">
-						<div class="headline-text">
+					<div class="col-lg-6 order-last order-lg-first my-lg-auto">
+						<div class="headline-text mx-lg-5 my-lg-auto">
 							<h3><strong>2+ YEARS</strong><br />First Day of School</h3>
 							<p>As summer winds to a close, you may be getting your child ready for their very first day of school. Oh the emotions that come with that – saying goodbye on that first day can be the hardest moment for both parent and child. This milestone opens up a new chapter in your little ones’ lives, they are going to meet new friends and open their eyes to a whole new world. It‘s a great time to establish a happy morning routine that you could follow daily, you can even encourage your child to pack their own school bag or sing a happy ‘school day’ tune. </p>
 						</div>
@@ -286,7 +286,7 @@
 						</div>
 					</div>		
 					<div class="col-lg-6 text-margin-top">
-						<div class="headline-text">
+						<div class="headline-text ml-lg-5">
 							<h3><strong>2+ YEARS</strong><br />“I Love You”</h3>
 							<p>Your heart will melt when your child says “mama” or “dada” for the first time. It feels so good that you can’t imagine how you will feel when your toddler actually says “I love you” or "wuv ooh", and then one day they just casually say it out of nowhere. Then later that day, they say it again. You just want to shout off the top of every rooftop, she loves us! She loves us! There’s no other feeling like it in the world. That’s your redemption for all the heartache, all the missed sleep, all the couple squabbles because of baby duty, all the times you sacrificed your personal time to do something sweet for your little one  - wrapped neatly into three little but unmistakeable words. As their vocabulary expands even further, they will no doubt, amaze you at every turn.</p>
 						</div>	

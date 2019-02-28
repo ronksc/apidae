@@ -41,7 +41,7 @@
 			<div class="col-12">
 				<h3>GET IN TOUCH WITH US</h3>
 				<div class="row justify-content-center">
-					<div class="col-lg-8">
+					<div class="col-lg-6">
 						<?php echo do_shortcode('[contact-form-7 id="33" title="Get in touch"]');?>
 					</div>
 				</div>
