@@ -1,20 +1,6 @@
 @include media-breakpoint-up(xs) {
 	.page-template-template-getintouch{
 		.section-wrapper{
-			font-size:13px;
-			
-			/*h3{
-				font-size:27px;
-				font-style:italic;
-			
-				strong{
-					font-size:23px;
-					font-style:normal;	
-					font-weight:700;
-				}
-			}*/
-			
-			
 			.headline-text{
 				margin-top:5%;
 				margin-bottom:5%;
@@ -24,22 +10,22 @@
 		.feature-text{
 			color:#a6c0cd;
 			text-align:center;
+			font-size:20px;
+			font-style: italic;
 			
 			h2{
 				font-size: 35px;
 				font-weight:700;
+				font-style:normal;
+				margin-top:10px;
 				margin-bottom: 30px;
-			}
-			
-			p{
-				font-size:20px;
-				font-style: italic;
 			}
 			
 			a{
 				color:#231f20;
 				text-decoration:underline;
 				font-style: normal;
+				font-size:15px;
 			}
 		}
 		
@@ -72,7 +58,7 @@
 					input{
 						border:1px solid #cecfd1;
 						width:100%;
-						padding: 5px 8px;
+						padding: 3px 15px;
 						font-family: 'Raleway', sans-serif;
 					}
 					
@@ -110,7 +96,7 @@
 				
 				.testimonials-title{
 					h4{
-						font-size:20px;
+						font-size:21px;
 						font-weight:700;
 						color:#92afc8;
 						margin-bottom:0;
@@ -172,21 +158,30 @@
 		}
 				
 		.feature-text{			
-			h1{
-				font-size: 45px;
-				font-weight:700;
-				margin-bottom: 30px;
+			font-size:25px;
+			
+			h2{
+				font-size: 47px;
 			}
 			
-			p{
+			a{
 				font-size:25px;
-				font-style: italic;
 			}
+		}
+		
+		.contact-form{
+			.introduction{
+				h2{
+					font-size:47px;
+				}
+			}	
 		}
 		
 		.testimonials{
 			h2{
-				//font-size:25px;
+				font-size:47px;
+				margin-bottom: 40px;
+			    margin-top: 30px;
 			}
 			
 			.testimonials-item{

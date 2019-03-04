@@ -9,8 +9,8 @@
 			left: 0;
 			top: 50%;
 			transform: translateY(-50%);
-			max-width: 186px;
-			//margin-top: 10px;
+			//max-width: 186px;
+			max-width: 136px;
 			margin-top:0;
 			margin-bottom:0;
 			margin-left: 15px;
@@ -26,6 +26,26 @@
 			background:#fff;
 			//padding-top:15px;
 			height:90px;
+			
+			.shadow_bottom{
+				position:relative;
+				width:100%;
+				height:1px;
+				
+				&:after{
+					content:"";
+					position:absolute;
+					top:100%;
+					left:0;
+					margin-top:-1px;
+					width:100%;
+					height:50px;
+					background:url(../images/bg_shadow_top.png) no-repeat;
+					background-size:100% auto;
+					display:block;
+					z-index:800;
+				}
+			}
 		}
 		
 		.navbar-header{
@@ -65,6 +85,59 @@
 					}
 				}
 			}
+			
+			.navbar-toggle{
+				padding: 0;
+				margin-top:22px;
+				margin-right:10px;
+				border: none;
+				outline:none;
+				background:#fff;
+				
+				&:hover, &:focus{
+					background:#fff;
+				}
+				
+				&.collapsed {
+					.icon-bar{
+						width:32px;
+					}
+				
+					.top-bar {
+						transform: rotate(45deg);
+						transform-origin:20% 200%;
+					}
+					.middle-bar {
+						opacity: 0;
+					}
+					.bottom-bar {
+						transform: rotate(-45deg);
+						transform-origin:15% -100%;
+					}
+				}
+				
+				.icon-bar{
+					background:#412017;
+					width:32px;
+					height:3px;
+					transition: all 0.2s;
+					display:block;
+				}
+				
+				.icon-bar + .icon-bar{
+					margin-top:6px;
+				}
+				
+				.top-bar {
+					transform: rotate(0);
+				}
+				.middle-bar {
+					opacity: 1;
+				}
+				.bottom-bar {
+					transform: rotate(0);
+				}
+			}
 		}
 		
 		.nav-container{
@@ -75,12 +148,14 @@
 			
 				li{
 					display:block;
-					margin-bottom:60px;
+					margin-bottom:50px;
 					text-align:center;
 					
 					a{
 						color:#231f20;
 						text-transform:uppercase;
+						font-size: 15px;
+						font-weight: 600;
 					}
 					
 					&:last-child{
@@ -92,7 +167,7 @@
 							//text-decoration:underline dotted;
 							display:inline-block;
 							border-bottom:1px dashed #231f20;
-							padding-bottom:1px;
+							//padding-bottom:1px;
 						}
 					}
 				}
@@ -104,7 +179,7 @@
 			ul.main-menu{
 				font-size:12px;
 				font-weight:600;
-				margin-top:37px;
+				margin-top:42px;
 				display:inline-block;
 				
 				li{
@@ -142,6 +217,17 @@
 	header{
 		a.brand{
 			width: 15%;
+			max-width: 186px;
+		}
+		
+		.menu-primary-menu-container{
+			ul.main-menu{
+				margin-top:65px;
+			}
+		}
+		
+		.header-container{
+			height:132px;
 		}
 	}
 }

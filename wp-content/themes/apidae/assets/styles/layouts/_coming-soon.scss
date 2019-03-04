@@ -9,7 +9,7 @@
 			}
 		}
 		.module__feature-banner{
-			margin-bottom:50px;
+			//margin-bottom:50px;
 			text-align:center;
 			
 			.banner-container{
@@ -31,12 +31,12 @@
 						text-align:center;
 						width:100%;
 						
-						h1{
+						/*h2{
 							//font-style: italic;
 							font-size: 45px;
 							font-weight:700;
 							//margin-bottom: 20%;
-						}
+						}*/
 						
 						p{
 							font-size:25px;
@@ -59,15 +59,26 @@
 }
 
 @include media-breakpoint-up(md) {
-	
+	.page-template-template-comingsoon{
+		.module__feature-banner{			
+			.banner-container{
+				.text-wrapper{
+					.text-container{
+						h2{
+							font-size: 45px;
+						}
+					}
+				}
+			}
+		}
+		.sign-up{
+			font-size:26px;
+		}
+	}
 }
 
 @include media-breakpoint-up(lg) {
-	.page-template-template-comingsoon{
-		.section-wrapper{
-			font-size:13px;
-		}
-	}
+	
 }
 
 @include media-breakpoint-up(xl) {

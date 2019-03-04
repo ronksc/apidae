@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,900');
 
 @include media-breakpoint-up(xs) {
 	body{
 		font-family: 'Raleway', sans-serif;
+		line-height:1.9;
 		.fixed{
 			position:fixed;
 		}
@@ -52,6 +53,10 @@
 	  }
 	}
 	
+	.zindex{
+		z-index:999;
+	}
+	
 	.main{
 		padding:0!important;
 		margin-top:90px;
@@ -87,7 +92,8 @@
 		
 		&.module__follow-us{
 			margin-top:50px!important;
-			margin-bottom:35px!important;
+			//margin-bottom:35px!important;
+			margin-bottom:0;
 			font-size:15px!important;
 			
 			ul{
@@ -98,7 +104,7 @@
 				li{
 					list-style:none;
 					display:inline-block;
-					margin-right:10px;
+					margin-right:35px;
 					&:last-child{
 						margin-right:0;
 					}
@@ -106,9 +112,17 @@
 					a{
 						color:#231f20;
 					}
+					
+					i{
+						font-size:15px;
+					}
 				}
 			}
 		}
+	}
+	
+	#sb_instagram.sbi_medium .sbi_type_carousel .sbi_photo_wrap .fa-clone, #sb_instagram .sbi_type_carousel .fa-clone{
+		display:none!important;
 	}
 }
 
@@ -134,7 +148,9 @@
 }
 
 @include media-breakpoint-up(lg) {
-	
+	.main{
+		margin-top:132px;	
+	}
 }
 
 @include media-breakpoint-up(xl) {

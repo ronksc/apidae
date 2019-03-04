@@ -1,8 +1,9 @@
-<div class="section-wrapper module__shadow-top module__feature-banner">
+<!--<div class="section-wrapper module__shadow-top module__feature-banner">-->
+<div class="section-wrapper module__feature-banner pt-5">
 	<div class="container-fluid">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
-				<div class="row">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
+				<div class="row no-gutters justify-content-center">
 					<div class="col-12 banner-container">
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story-mobile.png" class="img-fluid hidden-lg-up" />
 						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/banner-our-story.png" class="img-fluid hidden-md-down" />
@@ -19,20 +20,20 @@
 	</div>
 </div>
 <div class="section-wrapper module__two-column-text-with-img">
-	<div class="container-fluid">
+	<div class="container-fluid px-5 px-md-3">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
 				<div class="row justify-content-center">
-					<div class="col-lg-10 padding-30">
+					<div class="col-lg-11 px-lg-4">
 						<!--<div class="container">-->
 						<div class="row h-100">
-							<div class="col-12 col-lg-6 text-wrapper order-lg-last">
-								<div class="text-container">
+							<div class="col-12 col-lg-7 text-wrapper order-lg-last">
+								<div class="text-container ml-lg-5">
 									<p>Even though parenting is a whole life job, childhood is fast and fleeting. As parents we cannot hold onto things forever but we can help in the creation of unforgettable memories that stay forever ripe in your child’s mind. After all, those little memories will follow them and guide them through each stage of life.</p>
 									<p>Nobody ever said parenting is easy, it can be a tough gig at times – a learning curve of ever-changing schedules, wonder weeks and new milestones. And as a new parent you have so many decisions ahead of you, just navigating through all those essential baby products already feels overwhelming.</p>
 								</div>
 							</div>
-							<div class="col-12 col-lg-6 img-container left order-lg-first">
+							<div class="col-12 col-lg-5 img-container order-lg-first">
 								<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/our-story-1.png" class="img-fluid" />
 							</div>
 						</div>
@@ -43,23 +44,24 @@
 	</div>
 </div>
 <div class="section-wrapper module__two-column-text-with-img">
-	<div class="container-fluid">
+	<div class="container-fluid px-5 px-md-3">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
 				<div class="row justify-content-center">
-					<div class="col-lg-10 offset-lg-1 padding-30">
+					<div class="col-lg-11 px-lg-4">
 						<div class="row h-100">
-							<div class="col-12 col-lg-6 text-wrapper">
-								<div class="text-container">
+							<div class="col-12 col-lg-7 text-wrapper">
+								<div class="text-container mr-lg-4">
 									<div class="quote-text">
 										<p>At each stage of your baby's growth - they will have different needs. How will you choose?</p>
 									</div>
 									<div class="normal-text">
-										<p>Besides all the practical reasons – those childhood objects will always have such permanence and meaning. Those precious little beings will touch and encounter them every day – weaving them into their entire childhood experience. And as adults they may come back again and again to revisit those formative years with fondness. What was the backdrop behind those memories? How did those items protect us and help us grow? Every object has it’s value and each piece is carefully and thoughtfully handpicked by devoted parents like you. <strong>Every item the ultimate declaration of love.</strong> </p>
+										<p>Besides all the practical reasons – those childhood objects will always have such permanence and meaning. Those precious little beings will touch and encounter them every day – weaving them into their entire childhood experience. And as adults they may come back again and again to revisit those formative years with fondness. What was the backdrop behind those memories? How did those items protect us and help us grow? Every object has it’s value and each piece is carefully and thoughtfully handpicked by devoted parents like you.<br />
+										<strong>Every item the ultimate declaration of love.</strong> </p>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-6 img-container right">
+							<div class="col-12 col-lg-5 img-container">
 								<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/our-story-2.png" class="img-fluid" />
 							</div>
 						</div>
@@ -70,20 +72,20 @@
 	</div>
 </div>
 <div class="section-wrapper module__two-column-text-with-img with-margin">
-	<div class="container-fluid">
+	<div class="container-fluid px-5 px-md-3">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
 				<div class="row justify-content-center">
-					<div class="col-lg-10 offset-lg-1 padding-30">
+					<div class="col-lg-11 px-lg-4">
 						<div class="row h-100">
-							<div class="col-12 col-lg-3 text-wrapper order-lg-last">
-								<div class="text-container">
+							<div class="col-12 col-lg-4 text-wrapper order-lg-last">
+								<div class="text-container pl-lg-5">
 									<p>So let us help to make those decisions easy – even wise proverbs teach us that it takes a village to raise a child – hence our name apidae – we are here to build a buzzing community that helps and shares. </p>
 									<p><strong>We are three dads who are happy to openly share our own parenting experiences to make the natural selection of those essential purchasing decisions as effortless as possible. </strong></p>
 									<p>How could three dads possibly impart such wisdom you may ask – We have been representing, creating and developing baby products for a decade and a half. Selling a huge range of quality baby products to other businesses in over 42 countries worldwide. Introducing products to other baby retailers has given us a wealth of experience in understanding all the practical facts and features. But there is just something about the process of becoming a parent – trying out products in real life with our own children has really opened our eyes to new and deep insights.</p>
 								</div>
 							</div>
-							<div class="col-12 col-lg-9 img-container left padding-small order-lg-first">
+							<div class="col-12 col-lg-8 img-container padding-small order-lg-first">
 								<img src="<?=get_stylesheet_directory_uri()?>/assets/images/our-story/our-story-3.png" class="img-fluid" />
 							</div>
 						</div>
@@ -94,11 +96,11 @@
 	</div>
 </div>
 <div class="section-wrapper module__two-column-text-with-img">
-	<div class="container-fluid">
+	<div class="container-fluid px-5 px-md-3">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-9 position-relative">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
 				<div class="row justify-content-center">
-					<div class="col-lg-10 offset-lg-1 padding-30">
+					<div class="col-lg-11 px-lg-4">
 						<div class="row h-100">
 							<div class="col-12 col-lg-6 text-wrapper">
 								<div class="text-container">
@@ -110,7 +112,8 @@
 										<p>We promise to be a source of trusted information and inspiration for all parents.</p>
 									</div>
 									<div class="normal-text">
-										<p>Our ultimate hope and mission is to create a place for young families to enjoy the grand simple moments of life with those they love most. <strong>Good things begin here.</strong></p>
+										<p>Our ultimate hope and mission is to create a place for young families to enjoy the grand simple moments of life with those they love most. <br />
+										<strong>Good things begin here.</strong></p>
 										<p><a href="#">GET IN TOUCH WITH US</a></p>
 									</div>
 								</div>

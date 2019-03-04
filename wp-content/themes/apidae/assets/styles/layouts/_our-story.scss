@@ -29,17 +29,17 @@
 						transform:translate(-50%, -50%);
 						color:#fff;
 						text-align:center;
-						width:40%;
+						width:50%;
 						
 						h1{
 							font-size: 25px;
 							font-weight:700;
-							margin-bottom: 20%;
+							margin-bottom: 15%;
 						    font-family: "Josefin Sans", sans-serif;
 						}
 						
 						p{
-							font-size:12px;
+							font-size:15px;
 							font-style: italic;
 						}
 					}
@@ -62,7 +62,8 @@
 				.text-container{
 					.quote-text{
 						font-style: italic;
-						font-size: 18px;
+						//font-size: 18px;
+						font-size:26px;
 						color: #b8cdd7;
 						margin-bottom: 40px;
 					}
@@ -93,7 +94,7 @@
 				.text-wrapper{
 					.text-container{
 						h1{
-							font-size: 45px;
+							font-size: 47px;
 						}
 						
 						p{
@@ -109,7 +110,11 @@
 @include media-breakpoint-up(lg) {
 	.page-template-template-our-story{
 		.section-wrapper{
-			font-size:15px;
+			font-size:19px;
+			
+			i, em{
+				font-size:26px;
+			}
 		}
 	
 		.module__two-column-text-with-img{
