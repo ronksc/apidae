@@ -1,191 +1,139 @@
-<!--<div class="section-wrapper module__shadow-top feature-text">-->
-<div class="section-wrapper feature-text pt-5">
-	<div class="container-fluid">
-		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">
-				<div class="row justify-content-center">
-					<div class="col-10 col-lg-10">
-						<h2>GET IN TOUCH</h2>
-						<p>Apidae carefully curates products for expecting, new and growing families. We are happy to share our knowledge on a constantly expanding product range which is designed to meet every new need as families and their loved ones evolve through all the different stages of childhood.</p>
-						<div class="mt-3 mb-4 mt-lg-4 mb-lg-5">
-							<a href="#">BOOK A CONSULATION</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="section-wrapper feature-image mb-5 pb-lg-4">
-	<div class="container-fluid px-4">
-		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">
-				<div class="row h-100">
-					<div class="col-12 col-lg-6 mb-5 mb-lg-0 pr-lg-5">
-						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/getintouch/getintouch-1.png" class="img-fluid" />
-					</div>
-					<div class="col-12 col-lg-6 mb-4 mb-lg-0 my-lg-auto pl-lg-5">
-						<img src="<?=get_stylesheet_directory_uri()?>/assets/images/getintouch/getintouch-2.png" class="img-fluid" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="section-wrapper contact-form">
-	<div class="container-fluid px-4">
-		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">
-				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 introduction">
-						<h2>THE APIDAE EXPERIENCE</h2>
-						<p>At Apidae, it’s all about how little moments make life big. <br />
-						The way we talk to our children becomes their inner voice. <br />
-						The objects we curate around our children will become their backdrop of memories.</p>
+<?php
+	if( have_rows('page_module') ):
+	
+		// loop through the rows of data
+		while ( have_rows('page_module') ) : the_row();
 		
-						<p>We provide a safe sharing space where growing families <br />
-						gain the tools and knowledge to thrive in a world of overwhelming choice. <br />
-						We suggest products that will be relevant to your family and curated for your baby or child's age and stage.</p>
-						<p>Whether you’re a parent-to-be, a mum or dad, a close relative, or a friend of a family that is expecting, <br />
-						we are happy to help you take the guesswork out of selecting baby essentials. <br />
-						Visit our showroom, sit down with our experts and explore our exclusive products and specially curated brands.</p>
-					</div>
-				</div>
-				<div class="row contact-form-container pt-lg-3">
-					<div class="col-12">
-						<h3>GET IN TOUCH WITH US</h3>
-						<div class="row justify-content-center">
-							<div class="col-lg-7">
-								<?php echo do_shortcode('[contact-form-7 id="33" title="Get in touch"]');?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="section-wrapper module__shadow-top testimonials mb-lg-5">
-	<div class="container-fluid">
-		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">
-			<div class="row content-container">
-				<div class="col-12">
-					<h2>TESTIMONIALS</h2>
-				</div>
-			</div>
-			<div class="row mb-lg-5">
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row mb-lg-5">
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-				<div class="col-10 col-md-4 testimonials-item">
-					<div class="testimonials-title">
-						<h4>TWO-IN-ONE CAR SEAT</h4>
-						<span>LUNA LEA</span>
-						<div class="rating">
-							<ul>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="testimonials-text">
-						<p>There are so many carseats out there. I had no idea which one to choose. Apidae suggested an infant car seat that instantly made me feel like a supermom: I was able to quickly turn a car seat into a stroller, dash into stores and get errands done at the speed of light. Also great for getting in and out of taxis (and your own car) in a hurry. It also takes up zero car trunk space.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+			if ( get_row_layout() == 'feature_text' ):
+				$content = get_sub_field('content');
+				$booking_link = get_sub_field('booking_link');
+								
+				echo '<div class="section-wrapper feature-text pt-5">';
+					echo '<div class="container-fluid">';
+						echo '<div class="row justify-content-center h-100">';
+							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
+								echo '<div class="row justify-content-center">';
+									echo '<div class="col-10 col-lg-10">';
+										echo $content;
+										echo '<div class="mt-3 mb-4 mt-lg-4 mb-lg-5">';
+											echo '<a href="'.$booking_link['url'].'">'.$booking_link['text'].'</a>';
+										echo '</div>';
+									echo '</div>';
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+				
+			endif;
+			
+			if ( get_row_layout() == 'two_columns_image' ):
+				$image_left = get_sub_field('image_left');
+				$image_right = get_sub_field('image_right');
+				
+				echo '<div class="section-wrapper feature-image mb-5 pb-lg-4">';
+					echo '<div class="container-fluid px-4">';
+						echo '<div class="row justify-content-center h-100">';
+							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
+								echo '<div class="row h-100">';
+									echo '<div class="col-12 col-lg-6 mb-5 mb-lg-0 pr-lg-5">';
+										echo '<img src="'.$image_left['url'].'" class="img-fluid" />';
+									echo '</div>';
+									echo '<div class="col-12 col-lg-6 mb-4 mb-lg-0 my-lg-auto pl-lg-5">';
+										echo '<img src="'.$image_right['url'].'" class="img-fluid" />';
+									echo '</div>';
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+				
+			endif;
+			
+			if ( get_row_layout() == 'contact_form' ):
+				$content = get_sub_field('content');
+				$form_title = get_sub_field('form_title');
+				$form_shortcode = get_sub_field('form_shortcode');
+				
+				echo '<div class="section-wrapper contact-form">';
+					echo '<div class="container-fluid px-4">';
+						echo '<div class="row justify-content-center h-100">';
+							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
+								echo '<div class="row justify-content-center">';
+									echo '<div class="col-10 col-lg-8 introduction">'.$content.'</div>';
+								echo '</div>';
+								echo '<div class="row contact-form-container pt-lg-3">';
+									echo '<div class="col-12">';
+										echo '<h3>'.$form_title.'</h3>';
+										echo '<div class="row justify-content-center">';
+											echo '<div class="col-lg-7">';
+												echo do_shortcode($form_shortcode);
+											echo '</div>';
+										echo '</div>';
+									echo '</div>';
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+				
+			endif;
+			
+			if ( get_row_layout() == 'testimonials' ):
+				$title = get_sub_field('title');
+				$testimonial_items = get_sub_field('testimonial_item');
+			
+				echo '<div class="section-wrapper module__shadow-top testimonials mb-lg-5">';
+					echo '<div class="container-fluid">';
+						echo '<div class="row justify-content-center h-100">';
+							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
+							echo '<div class="row content-container">';
+								echo '<div class="col-12">';
+									echo '<h2>'.$title.'</h2>';
+								echo '</div>';
+							echo '</div>';
+							
+								
+								foreach($testimonial_items as $key => $testimonial_item):
+									if($key == 0 || ($key+1)%4 == 0){
+										echo '<div class="row mb-lg-5">';
+									}
+								
+									$post_title = get_the_title( $testimonial_item );
+									$username = get_field('username', $testimonial_item);
+									$rating = get_field('rating', $testimonial_item);
+									$content = get_field('content', $testimonial_item);
+									
+									echo '<div class="col-10 col-md-4 testimonials-item">';
+										echo '<div class="testimonials-title">';
+											echo '<h4>'.$post_title.'</h4>';
+											echo '<span>'.$username.'</span>';
+											echo '<div class="rating">';
+												echo '<ul>';
+													for($x = 0; $x < $rating; $x++):
+														echo '<li><i class="fas fa-star"></i></li>';
+													endfor;
+												echo '</ul>';
+											echo '</div>';
+										echo '</div>';
+										echo '<div class="testimonials-text">'.$content.'</div>';
+									echo '</div>';
+									
+									if(($key+1)%3 == 0 || $key+1 == count($testimonial_items)){
+										echo '</div>';
+									}
+									
+								endforeach;	
+								
+							
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+			
+			endif;
+			
+		endwhile;
+		
+	endif;
+
+?>
