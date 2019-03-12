@@ -1,3 +1,16 @@
+<?php
+	$home_pageID = get_option('page_on_front');
+	
+	$footer_pageID = get_field('footer', $home_pageID);
+	
+	$social_media_rows = get_field('social_media', $footer_pageID[0]);
+	$stay_in_touch = get_field('stay_in_touch', $footer_pageID[0]);
+	$spread_the_love = get_field('spread_the_love', $footer_pageID[0]);
+	$contact = get_field('contact', $footer_pageID[0]);
+	
+	
+?>
+
 <a href="javascript:;" class="btn_back-to-top"></a>
 <div class="section-wrapper module__shadow-top module__follow-us">
 	<div class="container-fluid px-5 px-md-3">
@@ -8,8 +21,13 @@
 						<div class="content-container pb-5">
 							<ul>
 								<li>FOLLOW US</li>
-								<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<?php
+									if($social_media_rows):
+										foreach($social_media_rows as $row):
+											echo '<li><a href="'.$row['url'].'" target="_blank"><i class="fab '.$row['platform'].'"></i></a></li>';
+										endforeach;
+									endif;
+								?>
 							</ul>
 						</div>
 					</div>
@@ -31,8 +49,11 @@
 					<div class="col-12 col-lg-7">
 						<div class="row justify-content-center">
 							<div class="col-12 col-lg-6 footer__module px-lg-4">
-								<h2>STAY IN TOUCH</h2>
-								<p>Join our mailing list for news on our latest updates, designs & promotions. A bundle of joy in email form.</p>
+								<?php
+									echo '<h2>'.$stay_in_touch['title'].'</h2>';
+									
+									echo $stay_in_touch['content'];
+								?>
 								<!--MAILCHIMP-->
 								<div class="email-input">
 									<input type="email" class="footer-email" placeholder="STAY IN TOUCH" />
@@ -40,8 +61,11 @@
 							</div>
 				
 							<div class="col-12 col-lg-6 footer__module px-lg-4">
-								<h2>SPREAD THE LOVE</h2>
-								<p>Share Apidae with a friend and we'll give you 10% off your next purchase when you both spend more than HK$1,000.</p>
+								<?php
+									echo '<h2>'.$spread_the_love['title'].'</h2>';
+									
+									echo $spread_the_love['content'];
+								?>
 								<!--MAILCHIMP-->
 								<div class="email-input">
 									<input type="email" class="footer-email" placeholder="ENTER YOUR FRIEND'S EMAIL" />
@@ -56,16 +80,9 @@
 					</div>
 		
 					<div class="col-12 col-lg-3 col-xl-2 footer__module pr-lg-5">
-						<h2>CONTACT</h2>
-						<p>Tel: <a href="tel:85239969956">+852 3996 9956</a><br />Email: <a href="mailto:info@apidae.hk">info@apidae.hk</a></p>
-						
-						<p><strong>BY APPOINTMENT ONLY</strong><br />
-						Room 826-828, One Island South<br />
-						2 Heung Yip Road<br />
-						Wong Chuk Hang, Hong Kong</p>
-						
+						<?php echo $contact['content']; ?>
 						<div class="preferred_partner">
-							<div class="partner-text">Preferred Partner:</div> <img src="<?=get_stylesheet_directory_uri()?>/assets/images/logo-mothercourt.png" />
+							<div class="partner-text"><?=$contact['preferred_partner']['text'];?></div> <img src="<?=$contact['preferred_partner']['logo']['url']?>" />
 						</div>
 					</div>
 				</div>
