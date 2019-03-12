@@ -8,6 +8,7 @@
 			position: absolute;
 			left: 0;
 			top: 50%;
+			z-index:9999;
 			transform: translateY(-50%);
 			//max-width: 186px;
 			max-width: 136px;
@@ -17,7 +18,7 @@
 			
 			
 			img{
-				max-width:183px;
+				max-width:155px;
 			}
 		}
 		
@@ -195,7 +196,7 @@
 						
 						&:hover{
 						    padding-bottom: 2px;
-						    border-bottom: 1px dashed;
+						    border-bottom: 1px dotted;
 							text-decoration:none;
 						}
 					}
@@ -222,12 +223,13 @@
 		
 		.menu-primary-menu-container{
 			ul.main-menu{
-				margin-top:65px;
+				margin-top: 60px;
+			    margin-bottom: 9px;
 			}
 		}
 		
 		.header-container{
-			height:132px;
+			height:115px;
 		}
 	}
 }

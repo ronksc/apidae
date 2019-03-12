@@ -1,25 +1,43 @@
-<div class="section-wrapper milestone-anchor mb-5 pt-5">
-	<div class="container-fluid">
-		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
-				<div class="row no-gutters anchor_wrapper justify-content-md-center">
-					<div class="col-12">
-						<ul>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="newborn">NEWBORN</a></li>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="1_3_months">1-3 MONTHS</a></li>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="4_6_months">4-6 MONTHS</a></li>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="4_8_months">4-8 MONTHS</a></li>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="1_2_years">1-2 YEARS</a></li>
-							<li><a class="nav_anchor" href="javascript:;" data-anchor="2_years">2+ YEARS</a></li>
-						</ul>
+<?php
+	$anchors = array();
+
+	if( have_rows('page_module') ):
+	
+		// loop through the rows of data
+		while ( have_rows('page_module') ) : the_row();
+			$anchor = get_sub_field('anchor');
+			
+			if($anchor['text']){
+				array_push($anchors, $anchor);
+			}
+			
+		endwhile;
+		
+	endif;
+
+	if($anchors): ?>
+	<div class="section-wrapper milestone-anchor mb-5 pt-5">
+		<div class="container-fluid">
+			<div class="row justify-content-center h-100">
+				<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
+					<div class="row no-gutters anchor_wrapper justify-content-md-center">
+						<div class="col-12">
+							<ul>
+							<?php 
+								foreach($anchors as $anchor_row):
+									echo '<li><a class="nav_anchor" href="javascript:;" data-anchor="'.$anchor_row['id'].'">'.$anchor_row['text'].'</a></li>';
+								endforeach;
+							?>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
 <?php
+	endif;
+
 	if( have_rows('page_module') ):
 	
 		// loop through the rows of data
@@ -33,7 +51,7 @@
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row h-100 justify-content-center content-container">';
-									echo '<div class="col-10 col-lg-10">';
+									echo '<div class="col-10 col-lg-9 col-xl-7">';
 										echo $content;
 									echo '</div>';
 								echo '</div>';
@@ -117,7 +135,7 @@
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
-									echo '<div class="col-lg-6 order-first order-lg-last image-1-margin"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
+									echo '<div class="col-lg-6 order-first order-lg-last image-1-margin mb-3 mb-lg-0"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
 									echo '<div class="col-lg-6 order-last order-lg-first">';
 										echo '<div class="headline-text mr-lg-5">'.$content.'</div>';
 									echo '</div>';
@@ -145,12 +163,13 @@
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
 									echo '<div class="col-lg-7 order-last order-lg-first">';
 										echo '<img src="'.$image_left['url'].'" class="img-fluid hidden-md-down" />';
-										echo '<img src="'.$image_right['url'].'" class="img-fluid hidden-lg-up" />';
+										echo '<div class=" mb-3 mb-lg-0"><img src="'.$image_right['url'].'" class="img-fluid hidden-lg-up" /></div>';
 										echo '<div class="text-margin-left">';
 											echo '<div class="headline-text mt-lg-3 mb-lg-5 pt-lg-3 pb-lg-5">'.$content_left.'</div>';
 										echo '</div>';
 									echo '</div>';
-									echo '<div class="col-lg-5 order-first order-lg-last text-margin-top"> <img src="'.$image_left['url'].'" class="img-fluid hidden-lg-up" />';
+									echo '<div class="col-lg-5 order-first order-lg-last text-margin-top">';
+										echo '<div class=" mb-3 mb-lg-0"><img src="'.$image_left['url'].'" class="img-fluid hidden-lg-up" /></div>';
 										echo '<div class="text-margin-left-2">';
 											echo '<div class="headline-text">'.$content_right.'</div>';
 											echo '<div class="hidden-md-down"> <img src="'.$image_right['url'].'" class="img-fluid hidden-md-down" /> </div>';
@@ -176,7 +195,7 @@
 								echo '<div class="row">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
 									echo '<div class="col-lg-6">';
-										echo '<div class="mr-lg-5 "> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
+										echo '<div class="mr-lg-5 mb-3 mb-lg-0"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
 									echo '</div>';
 									echo '<div class="col-lg-6 my-lg-auto">';
 										echo '<div class="headline-text">'.$content_right.'</div>';
@@ -201,7 +220,7 @@
 								echo '<div class="row">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
 									echo '<div class="col-lg-7 order-first order-lg-last my-auto">';
-										echo '<div class="image-margin"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
+										echo '<div class="image-margin mb-3 mb-lg-0"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
 									echo '</div>';
 									echo '<div class="col-lg-5 order-last order-lg-first my-lg-auto">';
 										echo '<div class="headline-text">'.$content_left.'</div>';
@@ -225,7 +244,7 @@
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row position-relative zindex">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
-									echo '<div class="col-lg-6"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
+									echo '<div class="col-lg-6 mb-3 mb-lg-0 mb-3 mb-lg-0"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
 									echo '<div class="col-lg-6 my-lg-auto">';
 										echo '<div class="headline-text ml-md-5">'.$content_right.'</div>';
 									echo '</div>';
@@ -249,7 +268,7 @@
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row position-relative">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
-									echo '<div class="col-lg-5 order-first order-lg-last"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
+									echo '<div class="col-lg-5 order-first order-lg-last mb-3 mb-lg-0"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
 									echo '<div class="col-lg-7 order-last order-lg-first">';
 										echo '<div class="d-flex h-100">';
 											echo '<div class="headline-text my-lg-auto mx-lg-5">'.$content_left.'</div>';
@@ -274,7 +293,7 @@
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
-									echo '<div class="col-lg-6"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
+									echo '<div class="col-lg-6 mb-3 mb-lg-0"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
 									echo '<div class="col-lg-6 my-lg-auto">';
 										echo '<div class="headline-text ml-lg-5">'.$content_right.'</div>';
 									echo '</div>';
@@ -297,7 +316,7 @@
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row position-relative">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
-									echo '<div class="col-lg-6 order-first order-lg-last"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
+									echo '<div class="col-lg-6 order-first order-lg-last mb-3 mb-lg-0"> <img src="'.$image_right['url'].'" class="img-fluid" /> </div>';
 									echo '<div class="col-lg-6 order-last order-lg-first my-lg-auto">';
 										echo '<div class="headline-text mx-lg-5 my-lg-auto">'.$content_left.'</div>';
 									echo '</div>';
@@ -320,7 +339,7 @@
 								echo '<div class="row">';
 									echo '<div class="anchor">'.$anchor['text'].'</div>';
 									echo '<div class="col-lg-6">';
-										echo '<div class="image-margin"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
+										echo '<div class="image-margin mb-3 mb-lg-0"> <img src="'.$image_left['url'].'" class="img-fluid" /> </div>';
 									echo '</div>';
 									echo '<div class="col-lg-6 text-margin-top">';
 										echo '<div class="headline-text ml-lg-5">'.$content_right.'</div>';

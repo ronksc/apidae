@@ -1,6 +1,8 @@
 @include media-breakpoint-up(xs) {
 	.page-template-template-home{
 		.section-wrapper{
+			line-height:1.7;
+		
 			i, em{
 				font-size:18px;
 			}
@@ -114,6 +116,7 @@
 		
 		h2{
 			text-align:center;
+			margin-bottom:15px;
 		}
 		
 		.module__text-with-img{
@@ -132,7 +135,11 @@
 			}
 		}
 		
-		.module__shadow-top{
+		.module__shadow-top{			
+			h2{
+				margin-bottom:20px;
+			}
+		
 			.content-container{
 				background:url(../images/bg_shadow_top.png) no-repeat top center;
 				background-size:100%;
@@ -165,7 +172,7 @@
 			}
 			
 			h2{
-				color: #b8cdd7;
+				color: #D0D2D3;
 			}
 			
 			.content-text{
@@ -283,10 +290,11 @@
 		
 		
 		.section-wrapper{
-			font-size:19px;	
+			font-size:17px;	
+			
 			
 			i, em{
-				font-size:26px;
+				font-size:23px;
 			}
 			
 			h2{

@@ -39,15 +39,15 @@
 <footer class="content-info">
 	<div class="container-fluid px-5 px-md-3">
 		<div class="row justify-content-center h-100">
-			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
+			<div class="col-12 col-sm-8 col-md-10 col-lg-11 col-xl-10 position-relative">
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-2 module__footer-nav footer__module pl-lg-5">
 						<h2>APIDAE</h2>
 						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</div>
 					
-					<div class="col-12 col-lg-7">
-						<div class="row justify-content-center">
+					<div class="col-12 col-lg-7 col-xl-6">
+						<div class="row justify-content-center h-100">
 							<div class="col-12 col-lg-6 footer__module px-lg-4">
 								<?php
 									echo '<h2>'.$stay_in_touch['title'].'</h2>';
@@ -55,7 +55,7 @@
 									echo $stay_in_touch['content'];
 								?>
 								<!--MAILCHIMP-->
-								<div class="email-input">
+								<div class="email-input pt-lg-3">
 									<input type="email" class="footer-email" placeholder="STAY IN TOUCH" />
 								</div>
 							</div>
@@ -67,22 +67,24 @@
 									echo $spread_the_love['content'];
 								?>
 								<!--MAILCHIMP-->
-								<div class="email-input">
+								<div class="email-input pt-lg-3">
 									<input type="email" class="footer-email" placeholder="ENTER YOUR FRIEND'S EMAIL" />
 								</div>
 							</div>
 							
-							<div class="col-12 module__privacy footer__module no-padding hidden-md-down text-center">
-								<span>&copy;<?php echo date("Y"); ?> Apidae All Rights Reserved.</span>
-								<?php wp_nav_menu( array( 'theme_location' => 'privacy-menu' ) ); ?>
+							<div class="col-12 module__privacy footer__module no-padding hidden-md-down text-center d-table pt-lg-5">
+								<div class="d-table-cell align-bottom">
+									<span>&copy;<?php echo date("Y"); ?> Apidae All Rights Reserved.</span>
+									<?php wp_nav_menu( array( 'theme_location' => 'privacy-menu' ) ); ?>
+								</div>
 							</div>
 						</div>
 					</div>
 		
-					<div class="col-12 col-lg-3 col-xl-2 footer__module pr-lg-5">
+					<div class="col-12 col-lg-3 col-xl-3 footer__module pr-lg-4">
 						<?php echo $contact['content']; ?>
 						<div class="preferred_partner">
-							<div class="partner-text"><?=$contact['preferred_partner']['text'];?></div> <img src="<?=$contact['preferred_partner']['logo']['url']?>" />
+							<div class="partner-text"><?=$contact['preferred_partner']['text'];?> <img src="<?=$contact['preferred_partner']['logo']['url']?>" /></div>
 						</div>
 					</div>
 				</div>

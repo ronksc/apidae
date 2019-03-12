@@ -128,6 +128,19 @@
 			initMilestoneAnchor();						   
 		});
       }
+    },
+    'page_template_template_getintouch': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+		
+		function dateInput(){
+			
+		}
+		
+		$(document).ready(function(){
+						   
+		});
+      }
     }
   };
 

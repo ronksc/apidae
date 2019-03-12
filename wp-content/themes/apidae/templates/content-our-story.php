@@ -9,7 +9,7 @@
 				$mobile_image = get_sub_field('mobile_image');
 				$content = get_sub_field('content');
 				
-				echo '<div class="section-wrapper module__feature-banner pt-5">';
+				echo '<div class="section-wrapper module__feature-banner pt-5 mb-4 mb-lg-5 pb-lg-2">';
 					echo '<div class="container-fluid">';
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">';

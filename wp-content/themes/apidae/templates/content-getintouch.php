@@ -13,7 +13,7 @@
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
 								echo '<div class="row justify-content-center">';
-									echo '<div class="col-10 col-lg-10">';
+									echo '<div class="col-10 col-lg-9 col-xl-7">';
 										echo $content;
 										echo '<div class="mt-3 mb-4 mt-lg-4 mb-lg-5">';
 											echo '<a href="'.$booking_link['url'].'">'.$booking_link['text'].'</a>';

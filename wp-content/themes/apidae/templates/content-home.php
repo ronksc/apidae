@@ -33,6 +33,7 @@
 			if ( get_row_layout() == 'our_story' ):
 				$title = get_sub_field('title');
 				$content = get_sub_field('content');
+				$image = get_sub_field('image');
 			
 			
 				echo '<div class="section-wrapper module__text-with-img">';
@@ -45,6 +46,7 @@
 								echo '<div class="row">';
 									echo '<div class="col-12 col-lg-8 offset-lg-4 col-xl-9 offset-xl-3">';
 									echo $content;
+									echo '<div class="mt-5"><img src="'.$image['url'].'" class="img-fluid" /></div>';
 									echo '</div>';
 								echo '</div>';
 							echo '</div>';

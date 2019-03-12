@@ -4,7 +4,7 @@
 	$banner_text = get_field('banner_text');
 	$content = get_field('content');
 ?>
-<div class="section-wrapper module__feature-banner pb-5 pb-lg-0 mb-5 mb-lg-5">
+<div class="section-wrapper module__feature-banner pt-5 pb-5 pb-lg-0 mb-5 mb-lg-5">
 	<div class="container-fluid">
 		<div class="row justify-content-center h-100">
 			<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">

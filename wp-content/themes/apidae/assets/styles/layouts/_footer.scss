@@ -5,7 +5,7 @@
 		padding-bottom:30px;
 		background:#E9E8E6;
 		color:#231f20;
-		font-size:10px;
+		font-size:11px;
 		
 		a{
 			color:#231f20;
@@ -20,8 +20,8 @@
 			h2{
 				display:block;
 				text-align:center;
-				font-size:22px;
-				margin-bottom:10px;
+				font-size:24px;
+				margin-bottom:15px;
 			}
 			
 			.email-input{
@@ -64,7 +64,7 @@
 		}
 		
 		.module__privacy{
-			font-size:10px;
+			font-size:11px;
 		
 			span{
 				margin-bottom:0;
@@ -100,7 +100,7 @@
 			.partner-text{
 				//float:left;
 				line-height:120%;
-				font-size:10px;
+				font-size:11px;
 				margin-right:5px;
 				display:inline-block;
 			}
@@ -125,14 +125,14 @@
 
 @include media-breakpoint-up(lg) {
 	footer{
-		font-size:12px;
+		font-size:13px;
 	
 		.footer__module{
 			text-align:left;
 			
 			h2{
 				text-align:left;
-				font-size:18px;
+				font-size:20px;
 			}
 
 			.email-input{			
@@ -165,6 +165,10 @@
 		
 			.menu-privacy-menu-container{
 				display:inline-block;
+				
+				ul{
+					margin-bottom:0;
+				}
 			}
 		}
 		
@@ -172,11 +176,11 @@
 			text-align:left;
 			
 			.partner-text{
-				float:left;
+				//float:left;
 			}
 			
 			img{
-				float:left;
+				//float:left;
 			}
 		}
 	}

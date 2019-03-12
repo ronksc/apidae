@@ -14,13 +14,21 @@
 		.section-wrapper{
 			//font-size:13px;
 			
+			&.feature-image{
+				.anchor{
+					left:30px;
+				}
+			}
+			
 			h3{
-				font-size:27px;
+				//font-size:27px;
+				font-size:23px;
 				font-style:italic;
 				margin-bottom:15px;
 			
 				strong{
-					font-size:23px;
+					//font-size:23px;
+					font-size:21px;
 					font-style:normal;	
 					font-weight:900;
 				}
@@ -60,6 +68,7 @@
 						
 						a{
 							color:#231f20;
+							text-decoration:none;
 						}
 					}
 				}
@@ -83,41 +92,21 @@
 			}
 		}
 		
+		.milestone-section-1{			
+			.mobile-image-left{
+				margin: 50% 5% 0 0;
+			}
+			
+			.mobile-image-right{
+				margin: 0 0 0 5%;
+			}
+		}
+		
 		.milestone-color-section{
 			padding:30px 0;
 			background:#f3f6f8;
 			
-			&.image-overlay{
-				background:transparent;
-				position:relative;
-				padding:0;
-				
-				.container-fluid{
-					&:after{
-						content:"";
-						position:absolute;
-						top:50%;
-						left:0;
-						transform:translateY(-50%);
-						z-index:10;
-						width:100%;
-						height:80%;
-						//background:#f3f6f8;
-						
-						background:url(../images/milestones/bg_grey_texture.png) no-repeat transparent;
-						background-size:auto 100%;
-					}
-				}
-				
-				&>.container-fluid{
-					position:relative;
-					z-index:999;
-				}
-				
-				.anchor{
-					top:80px;
-				}
-			}
+			
 			
 			&.extra-padding-bottom{
 				padding-bottom:10%!important;
@@ -151,7 +140,23 @@
 			left:-20px;
 		}
 		
-		.section-wrapper{			
+		.section-wrapper{
+			//font-size:13px;
+			
+			&.feature-image{
+				.anchor{
+					left:-20px;
+				}
+			}
+			
+			h3{
+				font-size:27px;
+			
+				strong{
+					font-size:23px;
+				}
+			}
+					
 			.headline-text{
 				margin-top:10%;
 				margin-bottom:10%;
@@ -226,13 +231,13 @@
 				margin:50% 0 0 0;
 			}
 			
-			.mobile-image-left{
+			/*.mobile-image-left{
 				margin: 50% 5% 0 0;
 			}
 			
 			.mobile-image-right{
 				margin: 0 0 0 5%;
-			}
+			}*/
 		}
 		
 		.milestone-section-2{
@@ -266,6 +271,38 @@
 			&.image-overlay{
 				.anchor{
 					//top:80px;
+				}
+			}
+			
+			&.image-overlay{
+				background:transparent;
+				position:relative;
+				padding:0;
+				
+				.container-fluid{
+					&:after{
+						content:"";
+						position:absolute;
+						top:50%;
+						left:0;
+						transform:translateY(-50%);
+						z-index:10;
+						width:100%;
+						height:80%;
+						//background:#f3f6f8;
+						
+						background:url(../images/milestones/bg_grey_texture.png) no-repeat transparent;
+						background-size:auto 100%;
+					}
+				}
+				
+				&>.container-fluid{
+					position:relative;
+					z-index:999;
+				}
+				
+				.anchor{
+					top:80px;
 				}
 			}
 		}

@@ -10,7 +10,7 @@
 		}
 		
 		.module__feature-banner{
-			margin-bottom:50px;
+			//margin-bottom:50px;
 			
 			.banner-container{
 				position:relative;
@@ -60,17 +60,19 @@
 				margin:30px 0;
 			
 				.text-container{
-					i,em{
+					em{
 						font-style: italic;
-						font-size:26px;
+						//font-size:23px;
+						font-size:20px;
 						color: #b8cdd7;
-						margin-bottom: 40px;
+						//margin-bottom: 40px;
+						margin-bottom: 20px;
 						display:block;
 					}
 					
 					p:not(:first-child){
-						i,em{
-							margin: 40px 0;
+						em{
+							margin: 20px 0;
 						}
 					}
 					
@@ -99,6 +101,8 @@
 			.banner-container{
 				.text-wrapper{
 					.text-container{
+						width:40%;
+						
 						h1{
 							font-size: 47px;
 						}
@@ -116,11 +120,7 @@
 @include media-breakpoint-up(lg) {
 	.page-template-template-our-story{
 		.section-wrapper{
-			font-size:19px;
-			
-			i, em{
-				font-size:26px;
-			}
+			font-size:15px;
 		}
 	
 		.module__two-column-text-with-img{
@@ -153,7 +153,16 @@
 				margin-bottom: auto;
 				
 				.text-container{
+					em{
+						font-size:23px;
+						margin-bottom: 30px;
+					}
 					
+					p:not(:first-child){
+						em{
+							margin: 30px 0;
+						}
+					}
 				}
 			}
 		}
