@@ -98,11 +98,14 @@
 				initPopup('signup');
 			} );
 			
+			
 			var wpcf7Elm = document.querySelector( '.wpcf7' );
-			 
-			wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
-				initPopup('getintouch');
-			}, false );
+			
+			if(typeof wpcf7Elm !== 'undefined' && wpcf7Elm){
+				wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
+					initPopup('getintouch');
+				}, false );
+			}
 		});
 		
 		$(window).resize(function(){
