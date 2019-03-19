@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,900');
 
 @include media-breakpoint-up(xs) {
+	.admin-bar{
+		.fixed-top{
+			top:32px;
+		}
+	}
+
 	body{
 		font-family: 'Raleway', sans-serif;
 		line-height:1.9;
@@ -60,7 +66,7 @@
 	
 	.main{
 		padding:0!important;
-		margin-top:90px;
+		margin-top:80px;
 		position:relative;
 		
 		a{
@@ -73,6 +79,7 @@
 		bottom: 40px;
 		right: 40px;
 		background:url(../images/btn_back-to-top.png) no-repeat;
+		background-size:100%;
 		width:42px;
 		height:74px;
 	}

@@ -1,5 +1,13 @@
 @include media-breakpoint-up(xs) {
 	.page-template-template-milestone{
+		header{
+			.header-container{
+				.shadow_bottom:after{
+					display:none;
+				}
+			}
+		}
+	
 		.anchor{
 			position: absolute;
 			left: -10px;
@@ -11,9 +19,7 @@
 			transform: rotate(-90deg) translateX(-100%);
 		}
 	
-		.section-wrapper{
-			//font-size:13px;
-			
+		.section-wrapper{			
 			&.feature-image{
 				.anchor{
 					left:30px;
@@ -127,7 +133,15 @@
 }
 
 @include media-breakpoint-up(sm) {
-
+	.page-template-template-milestone{	
+		.section-wrapper{			
+			&.feature-image{
+				.anchor{
+					left:-10;
+				}
+			}
+		}
+	}
 }
 
 @include media-breakpoint-up(md) {
@@ -172,9 +186,21 @@
 			margin-top:auto;
 		}
 	
-		.milestone-anchor{
-			position:relative;
-			z-index:999;
+		.milestone-anchor{	
+			position: fixed;
+			width: 100%;
+			background: #fff;
+			margin-top: -1px;
+			
+			margin-bottom:0;
+			//position:relative;
+			z-index:9999;
+			
+			.bg_shadow{
+			    background: url(../images/bg_shadow_top.png) no-repeat;
+			    background-size: 100% auto;
+			}
+			
 			.anchor_wrapper{
 				ul{
 					li{
@@ -201,6 +227,8 @@
 		}
 		
 		.feature-text{
+			padding-top:124px;
+		
 			.content-container{
 				background:none;
 				padding-top:0;
@@ -302,7 +330,7 @@
 				}
 				
 				.anchor{
-					top:80px;
+					top:12%;
 				}
 			}
 		}

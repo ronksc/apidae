@@ -23,12 +23,12 @@
 				position:absolute;
 				width:100%;
 				z-index:10;
-				bottom: 10%;
+				bottom: 5%;
 				
 				a{
 					display:inline-block!important;
-					width: 62px;
-				    height: 40px;
+					width: 47px;
+				    height: 30px;
 					background-size:100%!important;
 				}
 				.prev{
@@ -62,10 +62,14 @@
 						.text-container{
 							position:absolute;
 							top:10%;
-							left:8%;
+							left:10%;
 							color:#fff;
-							font-size:15px;
-							width:85%;
+							
+							width:65%;
+							
+							br{
+								display:none;
+							}
 						}
 					}
 					
@@ -74,7 +78,7 @@
 							top: 55%;
 							left:8%;
 							transform: translateY(-55%);
-							width: 65%;
+							width: 62%;
 							color:#c1b49a;
 							a{
 								color:#c1b49a;
@@ -84,7 +88,7 @@
 					
 					&.text-bottom{
 						.text-container{
-							bottom:15%;
+							bottom:10%;
 							left:8%;
 						}
 					}
@@ -106,9 +110,7 @@
 							text-decoration:underline;
 						}
 						
-						br{
-							display:none;
-						}
+						
 					}
 				}
 			}
@@ -345,7 +347,7 @@
 						.text-container{
 							bottom:10%;
 							left:8%;
-							width:40%;
+							width:70%;
 						}
 					}
 				}

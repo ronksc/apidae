@@ -16,10 +16,10 @@
 	endif;
 
 	if($anchors): ?>
-	<div class="section-wrapper milestone-anchor mb-5 pt-5">
+	<div class="section-wrapper milestone-anchor">
 		<div class="container-fluid">
-			<div class="row justify-content-center h-100">
-				<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">
+			<div class="row justify-content-center h-100 no-gutters">
+				<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative pt-5 pb-lg-5 bg_shadow">
 					<div class="row no-gutters anchor_wrapper justify-content-md-center">
 						<div class="col-12">
 							<ul>

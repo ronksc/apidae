@@ -56,7 +56,10 @@
 								?>
 								<!--MAILCHIMP-->
 								<div class="email-input pt-lg-3">
-									<input type="email" class="footer-email" placeholder="STAY IN TOUCH" />
+									<!--<input type="email" class="footer-email" placeholder="STAY IN TOUCH" />-->
+									<?php 
+										echo do_shortcode($stay_in_touch['form']);
+									?>
 								</div>
 							</div>
 				
@@ -68,7 +71,10 @@
 								?>
 								<!--MAILCHIMP-->
 								<div class="email-input pt-lg-3">
-									<input type="email" class="footer-email" placeholder="ENTER YOUR FRIEND'S EMAIL" />
+									<!--<input type="email" class="footer-email" placeholder="ENTER YOUR FRIEND'S EMAIL" />-->
+									<?php 
+										echo do_shortcode($spread_the_love['form']);
+									?>
 								</div>
 							</div>
 							
@@ -98,3 +104,20 @@
 		</div>
 	</div>
 </footer>
+<div class="popup-notification">
+	<div class="popup-wrapper signup">
+		<img src="<?=get_stylesheet_directory_uri()?>/assets/images/popup-signup.png" class="img-fluid" />
+		<a href="javascript:;" class="btn_close_popup"></a>
+		<div class="popup-container">
+			THANK YOU<br />FOR SIGNING UP
+		</div>
+	</div>
+	
+	<div class="popup-wrapper getintouch" style="display:none;">
+		<img src="<?=get_stylesheet_directory_uri()?>/assets/images/popup-getintouch.png" class="img-fluid" />
+		<a href="javascript:;" class="btn_close_popup"></a>
+		<div class="popup-container">
+			THANK YOU!<br />OUR TEAM WILL CONTACT YOU SHORTLY
+		</div>
+	</div>
+</div>

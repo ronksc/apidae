@@ -46,7 +46,29 @@
 			});
 		}
 		
+		function initPopup(choice){
+			$('.btn_close_popup').unbind('click');
+			$('.btn_close_popup').click(function(){
+				$('.popup-notification').fadeOut();
+				$('.popup-wrapper').fadeOut();
+			});
+			
+			switch(choice){
+				case 'signup':
+					$('.popup-notification').fadeIn();
+					$('.popup-wrapper').hide();
+					$('.signup').fadeIn();
+					break;
+				case 'getintouch':
+					$('.popup-notification').fadeIn();
+					$('.popup-wrapper').hide();
+					$('.getintouch').fadeIn();	
+					break;
+			}
+		}
+		
 		$(document).ready(function(){
+			initPopup();
 			initNavbarToggle();
 			
 			// hide #back-top first
@@ -70,6 +92,17 @@
 					return false;
 				});
 			});
+			
+			$( 'body' ).on( 'submit', '.yikes-easy-mc-form', function() {
+				//console.log('form submitted');
+				initPopup('signup');
+			} );
+			
+			var wpcf7Elm = document.querySelector( '.wpcf7' );
+			 
+			wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
+				initPopup('getintouch');
+			}, false );
 		});
 		
 		$(window).resize(function(){
@@ -116,10 +149,18 @@
         // JavaScript to be fired on the about us page
 		
 		function initMilestoneAnchor(){
+			var offset = 0;
+			
+			if($(window).width() > 991){
+				offset = 230;
+			}else{
+				offset = 85;	
+			}
+			
 			$('.nav_anchor').click(function(){
 				$anchor = $(this).attr("data-anchor");
 				$('html, body').animate({
-					scrollTop: $("#"+$anchor).offset().top-90
+					scrollTop: $("#"+$anchor).offset().top-offset
 				}, 500);
 			});
 		}
