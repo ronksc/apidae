@@ -61,7 +61,7 @@
 				$image_left = get_sub_field('image_left');
 				$image_right = get_sub_field('image_right');
 			
-				echo '<div class="section-wrapper module__shadow-top mt-lg-5">';
+				echo '<div class="section-wrapper module__shadow-top mt-lg-5 pt-lg-3">';
 					echo '<div class="container-fluid px-5 px-md-3">';
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">';
@@ -78,7 +78,7 @@
 														echo '<img src="'.$image_right['url'].'" class="img-fluid" />';
 													echo '</div>';
 													echo $content;
-													echo '<div class="hidden-lg-up">';
+													echo '<div class="hidden-lg-up mb-4 mb-lg-0">';
 														echo '<img src="'.$image_left['url'].'" class="img-fluid" />';
 													echo '</div>';
 													echo '<div class="hidden-lg-up">';
@@ -99,7 +99,7 @@
 				$title = get_sub_field('title');
 				$content = get_sub_field('content');
 			
-				echo '<div class="section-wrapper module__shadow-top module__instagram">';
+				echo '<div class="section-wrapper module__shadow-top module__instagram mt-lg-5 pt-lg-3">';
 					echo '<div class="container-fluid px-5 px-md-3">';
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-11 position-relative">';

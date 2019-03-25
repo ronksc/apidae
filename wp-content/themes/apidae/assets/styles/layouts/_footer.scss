@@ -68,6 +68,9 @@
 		
 		a{
 			color:#231f20;
+			&:hover{
+				color:#231f20;
+			}
 		}
 		
 		.footer__module{
@@ -93,6 +96,7 @@
 						font-size:15px;
 					    position: absolute;
 						top: 50%;
+						left:5px;
 						transform: translateY(-50%);
 					}
 				}
@@ -185,9 +189,9 @@
 			
 			img{
 				//float:left;
-				width:45%;
-				min-width:80px;
-				max-width:100px;
+				width: 55%;
+				min-width: 80px;
+				max-width: 150px;
 			}
 		}
 	}

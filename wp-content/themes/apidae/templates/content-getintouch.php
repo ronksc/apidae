@@ -8,11 +8,11 @@
 				$content = get_sub_field('content');
 				$booking_link = get_sub_field('booking_link');
 								
-				echo '<div class="section-wrapper feature-text pt-5">';
+				echo '<div class="section-wrapper feature-text module__shadow-top">';
 					echo '<div class="container-fluid">';
 						echo '<div class="row justify-content-center h-100">';
 							echo '<div class="col-12 col-sm-8 col-md-10 col-lg-10 position-relative">';
-								echo '<div class="row justify-content-center">';
+								echo '<div class="row justify-content-center content-container">';
 									echo '<div class="col-10 col-lg-9 col-xl-7">';
 										echo $content;
 										echo '<div class="mt-3 mb-4 mt-lg-4 mb-lg-5">';

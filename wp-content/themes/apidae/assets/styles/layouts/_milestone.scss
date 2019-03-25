@@ -75,6 +75,11 @@
 						a{
 							color:#231f20;
 							text-decoration:none;
+							
+							&:hover{
+								border-bottom:1px dotted;
+								color:#231f20;
+							}
 						}
 					}
 				}
@@ -218,7 +223,7 @@
 							padding-bottom:2px;
 							
 							&:hover{
-								border-bottom:1px dashed #231f20;
+								border-bottom:1px dotted;
 							}
 						}
 					}

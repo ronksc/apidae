@@ -31,12 +31,12 @@
 					  ?>
 				</div>
 			</div>
-			<div class="row no-gutters hidden-md-down">
+			<!--<div class="row no-gutters hidden-md-down">
 				<div class="shadow_bottom pb-4"></div>
 			</div>
 			<div class="row hidden-md-up">
 				<div class="shadow_bottom pb-4"></div>
-			</div>
+			</div>-->
 		</div>
     </div>
 	<!--<nav class="collapse navbar-collapse" role="navigation">

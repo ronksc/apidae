@@ -12,6 +12,12 @@
 			//margin-bottom:50px;
 			text-align:center;
 			
+			&.module__shadow-top{
+				.content-container{
+					padding-top:70px; 
+				}
+			}
+			
 			.banner-container{
 				position:relative;
 					
