@@ -37,6 +37,14 @@ switch ($_SERVER['SERVER_NAME']) {
     define( 'DB_USER',     'root' );
     define( 'DB_PASSWORD', 'catus' );
     define( 'DB_HOST',     'localhost' );
+
+  case "www.apidae.hk":
+    define( 'DB_NAME',     'apidae_website' );
+    define( 'WP_SITEURL',  'http://www.apidae.hk' );
+    define( 'WP_HOME', 'http://www.apidae.hk' );
+    define( 'DB_USER',     'apidae_user' );
+    define( 'DB_PASSWORD', 'TsOuHdIXSb' );
+    define( 'DB_HOST',     'localhost' );
 }
 
 /** Database Charset to use in creating database tables. */
